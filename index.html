@@ -479,14 +479,20 @@
 
         @media (max-width: 575.98px) {
             .banner {
-                background: url(wp-content/themes/smartsites/images/banner-home-mobile-sm.jpg) center no-repeat;
-                background-size: cover
+                background: url("./images/banner.jpg") center no-repeat !important;
+                background-size: cover;
+            }
+        }
+        @media (min-width: 575.98px) {
+            .banner {
+                background: url("./images/banner.jpg") center no-repeat !important;
+                background-size: cover;
             }
         }
 
         @media (max-width: 376px) {
             .contact-banner {
-                background-image: url(wp-content/themes/smartsites/images/banner-contact-mobile.jpg) !important
+                background-image: url('./images/banner.jpg') !important;
             }
 
             .page-id-119 .services-offers {
@@ -976,7 +982,7 @@
         <header id=header class=site-header>
             <nav id=top-header-nav class="navbar navbar-expand-xl navbar-light">
                 <a class=navbar-brand href=index.html><img fetchpriority=high src="./images/logo.png"
-                        alt="SmartSites Digital Marketing Agency" style="width: 120px;"></a>
+                        alt="SmartSites Digital Marketing Agency" style="width: 120px ;height:80px;"></a>
                 <div class="collapse navbar-collapse collapse-block" id=navbarToggler>
                     <div id=navbarToggler class="collapse navbar-collapse collapse-block">
                         <ul id=menu-primary-menu class="navbar-nav ml-auto">
@@ -1007,7 +1013,7 @@
         </header>
         <main id=main class=site-content>
             <section class="banner banner-home">
-                <div class=banner__video><video id=video class="d-block lazyload" autoplay muted playsinline
+                <div class=banner__video><video  class="d-block lazyload" autoplay muted playsinline
                         poster=./images/banner.jpg style="width:100%; object-fit: fill;" loop=loop>
                         <template>
                             <source src="" type=video/webm>
@@ -1020,27 +1026,7 @@
                         </h1>
                         <div class="typed-text btm-margin-md" data-aos=fade-left data-aos-duration=1000>
                             <span class="h6 sm-block d-xs-block"> We are passionate about</span>
-                            <div id=typed-items>
-                                <p>Google.</p>
-                                <p>challenging our clients.</p>
-                                <p>digital marketing.</p>
-                                <p>our clients success.</p>
-                                <p>writing clean code.</p>
-                                <p>fostering creativity.</p>
-                                <p>innovation.</p>
-                                <p>designing beautiful websites.</p>
-                                <p>thought leadership.</p>
-                                <p>learning new technologies.</p>
-                                <p>SEO.</p>
-                                <p>helping brands grow.</p>
-                                <p>a great cup of coffee.</p>
-                                <p>conversion rate optimization.</p>
-                                <p>Facebook Advertising.</p>
-                                <p>Google Ads.</p>
-                                <p>content creation.</p>
-                                <p>branding.</p>
-                                <p>custom development.</p>
-                            </div>
+                           
                             <span
                                 data-typed='{"stringsElement":"#typed-items","typeSpeed":70,"backSpeed":50,"backDelay":500,"startDelay":1000,"loop":true}'
                                 class=h6></span>
