@@ -123,7 +123,7 @@
     <div id=site-wrapper class=site-wrapper>
         <header  style="background-color:black;" id=header class=site-header>
             <nav id=top-header-nav class="navbar navbar-expand-xl navbar-light">
-                <a class=navbar-brand href=index.html><img fetchpriority=high src="{% static 'images/logo.png' %}"
+                <a class=navbar-brand href="{% url 'index' %}"><img fetchpriority=high src="{% static 'images/logo.png' %}"
                         alt="SmartSites Digital Marketing Agency" style="width: 120px ;height:80px;"></a>
                 <div class="collapse navbar-collapse collapse-block" id=navbarToggler>
                     <div id=navbarToggler class="collapse navbar-collapse collapse-block">
@@ -138,7 +138,7 @@
                             </li>
                             <li id=menu-item-435
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-435 nav-item">
-                                <a href=company/index.html class=nav-link>Company</a>
+                                <a href="{% url 'company' %}" class=nav-link>Company</a>
                             </li>
                             <li id=menu-item-440
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-440 nav-item">
