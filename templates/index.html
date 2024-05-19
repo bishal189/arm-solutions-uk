@@ -1,9 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
+
 <html lang=en-US>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
-    <script>var gform; gform || (document.addEventListener("gform_main_scripts_loaded", function () { gform.scriptsLoaded = !0 }), window.addEventListener("DOMContentLoaded", function () { gform.domLoaded = !0 }), gform = { domLoaded: !1, scriptsLoaded: !1, initializeOnLoaded: function (o) { gform.domLoaded && gform.scriptsLoaded ? o() : !gform.domLoaded && gform.scriptsLoaded ? window.addEventListener("DOMContentLoaded", o) : document.addEventListener("gform_main_scripts_loaded", o) }, hooks: { action: {}, filter: {} }, addAction: function (o, n, r, t) { gform.addHook("action", o, n, r, t) }, addFilter: function (o, n, r, t) { gform.addHook("filter", o, n, r, t) }, doAction: function (o) { gform.doHook("action", o, arguments) }, applyFilters: function (o) { return gform.doHook("filter", o, arguments) }, removeAction: function (o, n) { gform.removeHook("action", o, n) }, removeFilter: function (o, n, r) { gform.removeHook("filter", o, n, r) }, addHook: function (o, n, r, t, i) { null == gform.hooks[o][n] && (gform.hooks[o][n] = []); var e = gform.hooks[o][n]; null == i && (i = n + "_" + e.length), gform.hooks[o][n].push({ tag: i, callable: r, priority: t = null == t ? 10 : t }) }, doHook: function (n, o, r) { var t; if (r = Array.prototype.slice.call(r, 1), null != gform.hooks[n][o] && ((o = gform.hooks[n][o]).sort(function (o, n) { return o.priority - n.priority }), o.forEach(function (o) { "function" != typeof (t = o.callable) && (t = window[t]), "action" == n ? t.apply(null, r) : r[0] = t.apply(null, r) })), "filter" == n) return r[0] }, removeHook: function (o, n, t, i) { var r; null != gform.hooks[o][n] && (r = (r = gform.hooks[o][n]).filter(function (o, n, r) { return !!(null != i && i != o.tag || null != t && t != o.priority) }), gform.hooks[o][n] = r) } });</script>
     <style>
         .async-hide {
             opacity: 0 !important
@@ -12,17 +14,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="thumbnail" content="./images/logo.png">
+    <meta name="thumbnail" content="{% static 'images/logo.png' %}">
     <link rel=profile href=https://gmpg.org/xfn/11>
 
-    <link rel=preload href='wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' as=script>
+    <link rel=preload href="{% static 'wp-includes/js/jquery/jquery.minaf6c.js' %}" as=script>
     <link rel=preload as=font crossorigin=anonymous id=font-ProximaNova-Black href="" type=font/woff2>
     <link rel=preload as=font crossorigin=anonymous id=font-ProximaNova-Bold href="" type=font/woff2>
     <link rel=preload as=font crossorigin=anonymous id=font-ProximaNova-Light href="" type=font/woff2>
     <link rel=preload as=font crossorigin=anonymous id=font-ProximaNova-Semibold href="" type=font/woff2>
     <link rel=preload as=font crossorigin=anonymous id=font-ProximaNovaRegular href="" type=font/woff2>
     <link rel=preload as=font crossorigin=anonymous id=font-icomoon
-        href=wp-content/themes/smartsites/fonts/icomoon9cfb.ttf?ux23s5 type=font/ttf>
+          href="{% static 'wp-content/themes/smartsites/fonts/icomoon9cfb.ttf' %}" type=font/ttf>
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
     <title>arm solutionss an Award Winning Web Design &amp; Digital Marketing Agency</title>
     <meta name="description"
@@ -294,11 +296,11 @@
 
         /*]]>*/
     </style>
-    <link rel=stylesheet href=wp-content/cache/minify/09b42.css media=all>
-    <script async src=wp-content/cache/minify/8a587.js></script>
-    <script src='wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id=jquery-core-js></script>
+    <link rel=stylesheet href="{% static 'wp-content/cache/minify/09b42.css' %}" media=all>
+    <script async src="{% static 'wp-content/cache/minify/8a587.js' %}"></script>
+    <script src="{% static 'wp-includes/js/jquery/jquery.minaf6c.js' %}" id=jquery-core-js></script>
 
-    <script async src=wp-content/cache/minify/ca199.js></script>
+    <script async src="{% static 'wp-content/cache/minify/ca199.js' %}"></script>
     <link rel=https://api.w.org/ href=wp-json/index.html>
     <link rel=alternate type=application/json href=wp-json/wp/v2/pages/1.json>
     <link rel=EditURI type=application/rsd+xml title=RSD href=xmlrpc0db0.php?rsd>
@@ -479,20 +481,20 @@
 
         @media (max-width: 575.98px) {
             .banner {
-                background: url("./images/banner.jpg") center no-repeat !important;
+                background: url("{% static 'images/banner.jpg' %}") center no-repeat !important;
                 background-size: cover;
             }
         }
         @media (min-width: 575.98px) {
             .banner {
-                background: url("./images/banner.jpg") center no-repeat !important;
+                background: url("{% static 'images/banner.jpg' %}") center no-repeat !important;
                 background-size: cover;
             }
         }
 
         @media (max-width: 376px) {
             .contact-banner {
-                background-image: url('./images/banner.jpg') !important;
+                background-image: url("{% static 'images/banner.jpg' %}") !important;
             }
 
             .page-id-119 .services-offers {
@@ -981,7 +983,7 @@
     <div id=site-wrapper class=site-wrapper>
         <header id=header class=site-header>
             <nav id=top-header-nav class="navbar navbar-expand-xl navbar-light">
-                <a class=navbar-brand href=index.html><img fetchpriority=high src="./images/logo.png"
+                <a class=navbar-brand href=index.html><img fetchpriority=high src="{% static 'images/logo.png' %}"
                         alt="SmartSites Digital Marketing Agency" style="width: 120px ;height:80px;"></a>
                 <div class="collapse navbar-collapse collapse-block" id=navbarToggler>
                     <div id=navbarToggler class="collapse navbar-collapse collapse-block">
@@ -1014,7 +1016,7 @@
         <main id=main class=site-content>
             <section class="banner banner-home">
                 <div class=banner__video><video  class="d-block lazyload" autoplay muted playsinline
-                        poster=./images/banner.jpg style="width:100%; object-fit: fill;" loop=loop>
+                                                 poster="{% static 'images/banner.jpg' %}" style="width:100%; object-fit: fill;" loop=loop>
                         <template>
                             <source src="" type=video/webm>
                             <source src="" type=video/mp4>
@@ -1326,7 +1328,7 @@
                 <template>
                     <div class=row>
                         <div class="lazyload col-xl-6 column" data-aos=fade-up-right data-aos-duration=1000>
-                            <template><video playsinline poster="./images/united.jpg"
+                            <template><video playsinline poster="{% static 'images/united.jpg' %}"
                                     style="width:100%; object-fit: fill;" loop=loop>
 
                                 </video>
@@ -3152,18 +3154,18 @@
                         </div>
                         <div class="col-xl-8 img-holder" data-aos=zoom-in-left data-aos-duration=1000>
                             <picture>
-                                <source srcset="" media="(min-width: 1025px) and (max-width: 1110px)">
-                                <source srcset=./images/experts.jpg media="(min-width: 769px) and (max-width: 1024px)">
-                                <source srcset=./images/experts.jpg media="(min-width: 583px) and (max-width: 768px)">
-                                <source srcset=./images/experts.jpg media="(min-width: 544px) and (max-width: 582px)">
-                                <source srcset=./images/experts.jpg media="(min-width: 529px) and (max-width: 543px)">
-                                <source srcset=./images/experts.jpg media="(min-width: 437px) and (max-width: 528px)">
-                                <source srcset=./images/experts.jpg media="(min-width: 350px) and (max-width: 436px)">
-                                <source srcset=./images/experts.jpg media="(min-width: 301px) and (max-width: 349px)">
-                                <source srcset=./images/experts.jpg media="(min-width: 237px) and (max-width: 300px)">
-                                <source srcset=./images/experts.jpg media="(min-width: 76px) and (max-width: 236px)">
-                                <source srcset=./images/experts.jpg media="(max-width: 75px)">
-                                <img width=1110 height=885 src="./images/experts.jpg" class="attachment-full size-full"
+                                <source srcset="{% static 'images/experts.jpg' %}" media="(min-width: 1025px) and (max-width: 1110px)">
+                                <source srcset="{% static 'images/experts.jpg' %}" media="(min-width: 769px) and (max-width: 1024px)">
+                                <source srcset="{% static 'images/experts.jpg' %}" media="(min-width: 583px) and (max-width: 768px)">
+                                <source srcset="{% static 'images/experts.jpg' %}" media="(min-width: 544px) and (max-width: 582px)">
+                                <source srcset="{% static 'images/experts.jpg' %}" media="(min-width: 529px) and (max-width: 543px)">
+                                <source srcset="{% static 'images/experts.jpg' %}" media="(min-width: 437px) and (max-width: 528px)">
+                                <source srcset="{% static 'images/experts.jpg' %}" media="(min-width: 350px) and (max-width: 436px)">
+                                <source srcset="{% static 'images/experts.jpg' %}" media="(min-width: 301px) and (max-width: 349px)">
+                                <source srcset="{% static 'images/experts.jpg' %}" media="(min-width: 237px) and (max-width: 300px)">
+                                <source srcset="{% static 'images/experts.jpg' %}" media="(min-width: 76px) and (max-width: 236px)">
+                                <source srcset="{% static 'images/experts.jpg' %}" media="(max-width: 75px)">
+                                <img width=1110 height=885 src=""{% static 'images/experts.jpg' %}"" class="attachment-full size-full"
                                     alt="arm solution team">
                             </picture>
                         </div>
@@ -3171,18 +3173,7 @@
 
                 </template>
             </section>
-            <script async>var ajaxObject = { "ajaxurl": "https://www.smartsites.com/wp-admin/admin-ajax.php" };</script>
-            <script defer
-                async>var ajaxAction = 'do_show_testimonials_main'; function getPosts() {
-                        var $container = jQuery('#reviews'); var $content = $container; var $status = '<div class="status overlay" style="width: 100%">Loading...</div>'; var ajax_nonce = '545048e3f0'; jQuery.ajax({
-                            url: ajaxObject.ajaxurl, data: { action: ajaxAction, nonce: ajax_nonce, params: '', current_post: 1 }, type: 'post', dataType: 'json', beforeSend: function (xhr) { $container.addClass('loading'); $container.html('<div class="d-flex justify-content-center"><div class="spinner-border text-primary" role=status style="width: 3rem; height: 3rem;"><span class=sr-only>Loading...</span></div></div>'); }, success: function (data, textStatus, XMLHttpRequest) {
-                                $container.removeClass('loading'); if (data.status === 200) { $container.html('').hide(); $container.html(data.content).show(); } else { $content.html(data.message); }
-                                jQuery('.dropdown-item').on('click', function (e) { e.preventDefault(); var datahref = jQuery(this).attr('data-href'); var datatxt = jQuery(this).text(); jQuery('#' + datahref).trigger('click'); jQuery('.dropdown-item').removeClass('active'); jQuery(this).addClass('active'); jQuery('.js-selectedval').text(datatxt); }); var maxHeight = 0; jQuery(".equal-height").each(function () { if (jQuery(this).height() > maxHeight) { maxHeight = jQuery(this).height(); } }); jQuery(".equal-height").height(maxHeight);
-                            }, error: function (MLHttpRequest, textStatus, errorThrown) { $status.html(textStatus); }, complete: function (data, textStatus) { $container.removeClass('loading'); }
-                        });
-                    }
-                    var sectionLoaded = false; jQuery(window).scrll(function () { var y_scroll_pos = jQuery(this).scrollTop(); var page_section_pos = jQuery("#reviews").offset().top - 2500; if ((sectionLoaded === false) && (y_scroll_pos > page_section_pos)) { getPosts(); sectionLoaded = true; } });</script>
-        </main>
+   </main>
         <footer id=footer class="site-footer footer-sticky">
             <div class=footer__top>
                 <div class=container>
@@ -3457,7 +3448,7 @@
                             <div class="col-lg-7 order-1">
                                 <div class="holder logo-social">
                                     <a class=navbar-brand href=index.html><img fetchpriority=high
-                                            src="./images/logo.png" alt="arm solutions Digital Marketing Agency"
+                                       src="{% static 'images/logo.png' %}" alt="arm solutions Digital Marketing Agency"
                                             width=208 height=43></a>
                                     <ul class=sf-social>
                                         <li>
@@ -3608,22 +3599,15 @@
             </div>
         </div>
     </div>
-    <script async src=wp-content/cache/minify/b33c5.js></script>
-    <script src='wp-includes/js/dist/i18n.min771a.js?ver=ebee46757c6a411e38fd079a7ac71d94' id=wp-i18n-js></script>
-    <script async src=wp-content/cache/minify/aba2a.js></script>
+    <script async src="{% static 'wp-content/cache/minify/b33c5.js' %}"></script>
 
-    <script async src=wp-content/cache/minify/e0515.js></script>
-    <script defer src=wp-content/cache/minify/45ffb.js></script>
-    <script id=gform_conditional_logic-js-extra>var gf_legacy = { "is_legacy": "1" };</script>
-    <script async src=wp-content/cache/minify/53a20.js></script> <noscript><iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-WPSLWJ" height=0 width=0
-            style=display:none;visibility:hidden></iframe></noscript>
-
+<!--
     <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387"
         integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ=="
         data-cf-beacon='{"rayId":"88481b51bfc17f59","r":1,"version":"2024.4.1","token":"3dce7bc30b584e6cac5bce60bee3d88d"}'
         crossorigin="anonymous"></script>
+    -->
 </body>
 
 
