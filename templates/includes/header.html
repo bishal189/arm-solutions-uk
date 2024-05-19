@@ -121,7 +121,7 @@
         </defs>
     </svg>
     <div id=site-wrapper class=site-wrapper>
-        <header id=header class=site-header>
+        <header  style="background-color:black;" id=header class=site-header>
             <nav id=top-header-nav class="navbar navbar-expand-xl navbar-light">
                 <a class=navbar-brand href=index.html><img fetchpriority=high src="{% static 'images/logo.png' %}"
                         alt="SmartSites Digital Marketing Agency" style="width: 120px ;height:80px;"></a>
@@ -134,7 +134,7 @@
                             </li>
                             <li id=menu-item-430
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-430 nav-item">
-                                <a href=work/index.html class=nav-link>Our Work</a>
+                                <a href="{% url 'work' %}" class=nav-link>Our Work</a>
                             </li>
                             <li id=menu-item-435
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-435 nav-item">
