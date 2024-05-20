@@ -5,20 +5,18 @@
 <body
     class="page-template page-template-page-templates page-template-tpl-contact page-template-page-templatestpl-contact-php page page-id-4 has-sidebar">
 {% include 'includes/header.html' %}
-        <main id=main class=site-content>
+        <main  style="margin-top:5rem;" id=main class=site-content>
             <!DOCTYPE html>
-            <section class="inner-banner contact-banner bg-cover">
-                <img width=2000 height=1000 src="{% static 'media/bg-contact.jpg' %}" class=bg-image alt="Contact SmartSites"
-                    style="display: none;"
-                    srcset="https://www.smartsites.com/media/bg-contact.jpg 2000w, https://www.smartsites.com/media/bg-contact-300x150.jpg 300w, https://www.smartsites.com/media/bg-contact-1024x512.jpg 1024w, https://www.smartsites.com/media/bg-contact-768x384.jpg 768w, https://www.smartsites.com/media/bg-contact-1536x768.jpg 1536w, https://www.smartsites.com/media/bg-contact-755x378.jpg 755w, https://www.smartsites.com/media/bg-contact-546x273.jpg 546w, https://www.smartsites.com/media/bg-contact-570x285.jpg 570w, https://www.smartsites.com/media/bg-contact-687x344.jpg 687w, https://www.smartsites.com/media/bg-contact-928x464.jpg 928w, https://www.smartsites.com/media/bg-contact-376x188.jpg 376w, https://www.smartsites.com/media/bg-contact-75x38.jpg 75w, https://www.smartsites.com/media/bg-contact-1060x530.jpg 1060w, https://www.smartsites.com/media/bg-contact-640x320.jpg 640w"
-                    sizes="(max-width: 2000px) 100vw, 2000px" fetchpriority=high data-preload=1>
+            <section class="inne-banner contact-banner bg-cover">
+                <img  src="{% static 'images/bg-contact.webp' %}" class=bgimage alt="Contact Arm Solutions ">
                 <div class=container>
-                    <div class="inner-banner__title text-white text-center">
+                    <div class="inner-banner__ttle text-white text-center">
                         <h1 data-aos="fade-down" data-aos-duration="1000">Contact Us</h1>
                     </div>
 
                     <div class='gf_browser_unknown gform_wrapper form-display4_wrapper gform_legacy_markup_wrapper'
-                        id=gform_wrapper_3 style=display:none>
+                        id=gform_wrapper_3 >
+
                         <div class=gform_heading>
                             <h3 class="gform_title">Contact Form</h3>
                         </div>
@@ -74,7 +72,7 @@
                                                 id=input_3_4 type=text value class=medium tabindex=103
                                                 placeholder=Company aria-invalid=false></div>
                                     </li>
-                                    <li id=field_3_5
+                                        <li id=field_3_5
                                         class="gfield help-icon field_sublabel_below field_description_below gfield_visibility_visible"
                                         data-js-reload=field_3_5><label class=gfield_label for=input_3_5>How Can We Help
                                             You?</label>
@@ -82,60 +80,6 @@
                                                 id=input_3_5 class='textarea medium' tabindex=104
                                                 placeholder='How Can We Help You?' aria-invalid=false rows=10
                                                 cols=50></textarea></div>
-                                    </li>
-                                    <li id=field_3_6
-                                        class="gfield ss-services field_sublabel_below field_description_below gfield_visibility_visible"
-                                        data-js-reload=field_3_6><label
-                                            class='gfield_label gfield_label_before_complex'>What services are you
-                                            interested in?</label>
-                                        <div class='ginput_container ginput_container_checkbox'>
-                                            <ul class=gfield_checkbox id=input_3_6>
-                                                <li class='gchoice gchoice_3_6_1'>
-                                                    <input class=gfield-choice-input name=input_6.1 type=checkbox
-                                                        value=PPC id=choice_3_6_1 tabindex=105>
-                                                    <label for=choice_3_6_1 id=label_3_6_1>Pay Per Click
-                                                        Marketing</label>
-                                                </li>
-                                                <li class='gchoice gchoice_3_6_2'>
-                                                    <input class=gfield-choice-input name=input_6.2 type=checkbox
-                                                        value=SEO id=choice_3_6_2 tabindex=106>
-                                                    <label for=choice_3_6_2 id=label_3_6_2>Search Engine
-                                                        Optimization</label>
-                                                </li>
-                                                <li class='gchoice gchoice_3_6_3'>
-                                                    <input class=gfield-choice-input name=input_6.3 type=checkbox
-                                                        value='WEBSITE DESIGN' id=choice_3_6_3 tabindex=107>
-                                                    <label for=choice_3_6_3 id=label_3_6_3>Website Design &
-                                                        Development</label>
-                                                </li>
-                                                <li class='gchoice gchoice_3_6_4'>
-                                                    <input class=gfield-choice-input name=input_6.4 type=checkbox
-                                                        value='Email Marketing' id=choice_3_6_4 tabindex=108>
-                                                    <label for=choice_3_6_4 id=label_3_6_4>Email & SMS Marketing</label>
-                                                </li>
-                                                <li class='gchoice gchoice_3_6_5'>
-                                                    <input class=gfield-choice-input name=input_6.5 type=checkbox
-                                                        value='Social Media' id=choice_3_6_5 tabindex=109>
-                                                    <label for=choice_3_6_5 id=label_3_6_5>Social Media
-                                                        Management</label>
-                                                </li>
-                                                <li class='gchoice gchoice_3_6_6'>
-                                                    <input class=gfield-choice-input name=input_6.6 type=checkbox
-                                                        value=Other id=choice_3_6_6 tabindex=110>
-                                                    <label for=choice_3_6_6 id=label_3_6_6>Others</label>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li id=field_3_7
-                                        class="gfield other-specify-input gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
-                                        data-js-reload=field_3_7><label class=gfield_label for=input_3_7>Other (Please
-                                            Specify)<span class=gfield_required><span
-                                                    class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                        <div class='ginput_container ginput_container_text'><input name=input_7
-                                                id=input_3_7 type=text value class=medium tabindex=111
-                                                placeholder='Other (Please Specify)' aria-required=true
-                                                aria-invalid=false></div>
                                     </li>
                                     <li id=field_3_9
                                         class="gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible"
@@ -163,7 +107,7 @@
                                 </ul>
                             </div>
                             <div class='gform_footer top_label'> <input type=submit id=gform_submit_button_3
-                                    class='gform_button button' value='Get Started' tabindex=112
+                                    class='gform_button button' value='Submit' tabindex=112
                                     onclick='if(window["gf_submitting_3"]){return false;}  if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  '
                                     onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_3"]){return false;} if( !jQuery("#gform_3")[0].checkValidity || jQuery("#gform_3")[0].checkValidity()){window["gf_submitting_3"]=true;}  jQuery("#gform_3").trigger("submit",[true]); }'>
                                 <input type=hidden name=gform_ajax
@@ -188,27 +132,28 @@
                     </div>
                 </div>
             </section>
+
             <section class=map>
                 <div class=map-content>
                     <div class=row>
                         <div class="col-lg-4 col-md-6 align-self-center">
                             <div class=map-contact>
                                 <h2>Get In Touch</h2>
-                                <ul>
+                                <ul style="list-style-type:none;">
                                     <li class=map-contact__item data-aos=fade-down data-aos-duration=1000>
                                         <span class=icon-location></span>
-                                        <h6>Address</h6>
-                                        <p>45 UK Liverpool</p>
+                                        <h6 style="display:inline-block">Address</h6>
+                                        <p style="font-size:1.2rem;margin-left:20px;">45 UK Liverpool</p>
                                     </li>
                                     <li class=map-contact__item data-aos=zoom-in data-aos-duration=1000>
                                         <span class=icon-phone></span>
-                                        <h6>Phone Number</h6>
-                                        <p><a href=tel:07444106984>07444 106 984</a></p>
+                                        <h6 style="display:inline-block;">Phone Number</h6>
+                                        <p style="font-size:1.2rem;margin-left:20px;"><a href=tel:0151 546 5585>0151 546 5585</a></p>
                                     </li>
                                     <li class=map-contact__item data-aos=fade-up data-aos-duration=1000>
                                         <span class=icon-envelope></span>
-                                        <h6>Email Address</h6>
-                                        <p><a href=mailto:sales@arm-solutions.co.uk>sales@arm-solutions.co.uk</a></p>
+                                        <h6 style="display:inline-block;">Email Address</h6>
+                                        <p style="font-size:1.2rem;margin-left:20px;"><a href=mailto:sales@arm-solutions.co.uk>sales@arm-solutions.co.uk</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -232,95 +177,7 @@
                 </div>
             </section>
          
-            <section class=contact-social>
-                <div class=container>
-                    <div class=contact-social__heading>
-                        <h2>Follow SmartSites</h2>
-                    </div>
-                    <div class=contact-social__content>
-                        <ul>
-                            <li class=contact-social__item data-aos=fade-down data-aos-duration=1100>
-                                <div class=contact-social__itemwrap>
-                                    <a href="" target=_blank>
-                                        <div class=contact-social__icon>
-                                            <span class=icon-twitter-x></span>
-                                        </div>
-                                    </a>
-                                    <div class=contact-social__text>
-                                        <h5>Follow Us</h5>
-                                        <p>to get the latest!</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class=contact-social__item data-aos=fade-down data-aos-duration=1200>
-                                <div class=contact-social__itemwrap>
-                                    <a href="" target=_blank>
-                                        <div class=contact-social__icon>
-                                            <span class=icon-instagram></span>
-                                        </div>
-                                    </a>
-                                    <div class=contact-social__text>
-                                        <h5>Join Us</h5>
-                                        <p>and follow our story!</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class=contact-social__item data-aos=fade-down data-aos-duration=1300>
-                                <div class=contact-social__itemwrap>
-                                    <a href="" target=_blank>
-                                        <div class=contact-social__icon>
-                                            <span class=icon-facebook></span>
-                                        </div>
-                                    </a>
-                                    <div class=contact-social__text>
-                                        <h5>Like Us</h5>
-                                        <p>to stay in touch!</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class=contact-social__item data-aos=fade-down data-aos-duration=1400>
-                                <div class=contact-social__itemwrap>
-                                    <a href='' target=_blank>
-                                        <div class=contact-social__icon>
-                                            <span class=icon-linkedin></span>
-                                        </div>
-                                    </a>
-                                    <div class=contact-social__text>
-                                        <h5>Connect Us</h5>
-                                        <p>company & industry news!</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class=contact-social__item data-aos=fade-down data-aos-duration=1500>
-                                <div class=contact-social__itemwrap>
-                                    <a href=https://www.pinterest.com/smartsites/ target=_blank>
-                                        <div class=contact-social__icon>
-                                            <span class=icon-pinterest></span>
-                                        </div>
-                                    </a>
-                                    <div class=contact-social__text>
-                                        <h5>Pin Us</h5>
-                                        <p>recent photos</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class=contact-social__item data-aos=fade-down data-aos-duration=1600>
-                                <div class=contact-social__itemwrap>
-                                    <a href=../blog/feed/index.html target=_blank>
-                                        <div class=contact-social__icon>
-                                            <span class=icon-subscribe></span>
-                                        </div>
-                                    </a>
-                                    <div class=contact-social__text>
-                                        <h5>Subscribe</h5>
-                                        <p>to our feed!</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+
         </main>
 {% include 'includes/footer.html' %}
     <script async src="{% static 'wp-content/cache/minify/8115f.js' %}"></script>

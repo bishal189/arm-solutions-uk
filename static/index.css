@@ -435,7 +435,7 @@
 
         @media (max-width: 376px) {
             .contact-banner {
-                background-image: url("{% static 'images/banner.jpg' %}") !important;
+                background-image: url("{% static 'images/bg-contact.webp' %}") !important;
             }
 
             .page-id-119 .services-offers {
