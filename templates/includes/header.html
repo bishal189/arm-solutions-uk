@@ -153,3 +153,32 @@
             </button>
         </nav>
     </header>
+  <!-- Include the script at the end of the body -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the current URL
+            var currentUrl = window.location.href;
+
+            // Define a mapping between the URL keywords and the menu item IDs
+            var menuItems = [
+                { id: 'menu-item-29344', keyword: 'service' },
+                { id: 'menu-item-430', keyword: 'work' },
+                { id: 'menu-item-435', keyword: 'company' },
+                { id: 'menu-item-440', keyword: 'contact' }
+            ];
+
+            // Loop through each menu item
+            menuItems.forEach(function(item) {
+                // Check if the current URL contains the keyword
+                if (currentUrl.includes(item.keyword)) {
+                    // Get the <a> element inside the <li> with the specified id
+                    var linkElement = document.querySelector('#' + item.id + ' a');
+
+                    // Add the 'gradient-text' class
+                    if (linkElement) {
+                        linkElement.classList.add('gradient-text');
+                    }
+                }
+            });
+        });
+    </script>
