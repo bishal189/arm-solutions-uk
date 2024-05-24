@@ -65,38 +65,7 @@
                                                         id=input_2_4 type=text value class=medium tabindex=503
                                                         placeholder=Company aria-invalid=false></div>
                                             </li>
-                                            <li id=field_2_24
-                                                class="gfield js-multiselect services-icon gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
-                                                data-js-reload=field_2_24><label class=gfield_label
-                                                    for=input_2_24>Services you are interested in*<span
-                                                        class=gfield_required><span
-                                                            class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                                <div class='ginput_container ginput_container_multiselect'><select
-                                                        multiple=multiple size=7 name=input_24[]
-                                                        data-multipleselect='{"includeSelectAllOption":true,"nonSelectedText":"Services you are interested in*"}'
-                                                        id=input_2_24 class='medium gfield_select' tabindex=504
-                                                        aria-invaldata-multipleselect='{"includeSelectAllOption":true,"nonSelectedText":"Services you are interested in*"}'
-                                                        id=false aria-required=true>
-                                                        <option value='WEBSITE DESIGN'>Website Design &amp; Development
-                                                        </option>
-                                                        <option value=SEO>Search Engine Optimization</option>
-                                                        <option value=PPC>Pay Per Click Marketing</option>
-                                                        <option value='Email Marketing'>Email &amp; SMS Marketing
-                                                        </option>
-                                                        <option value='Social Media'>Social Media Management</option>
-                                                        <option value=Other>Other</option>
-                                                    </select></div>
-                                            </li>
-                                            <li id=field_2_8
-                                                class="gfield full-width-box gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
-                                                data-js-reload=field_2_8><label class=gfield_label for=input_2_8>Other
-                                                    (Please Specify)<span class=gfield_required><span
-                                                            class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                                <div class='ginput_container ginput_container_text'><input name=input_8
-                                                        id=input_2_8 type=text value class=medium tabindex=505
-                                                        placeholder='Other (Please Specify)*' aria-required=true
-                                                        aria-invalid=false></div>
-                                            </li>
+
                                             <li id=field_2_6
                                                 class="gfield help-icon focus-increase field_sublabel_below field_description_below gfield_visibility_visible"
                                                 data-js-reload=field_2_6><label class=gfield_label for=input_2_6>How can
@@ -160,13 +129,13 @@
                         <div class=column-right data-aos=fade-left data-aos-duration=1000>
                             <div class="footer__promo text-white pl-0">
                                 <h4 class="font-weight-semibold">
-                                    Ready to speak with a marketing expert? Give us a ring
-                                    <a href=tel:2018706000 class=d-inline-block>07444-106-984</a>
+                                    Ready to speak with our expert? Give us a ring
+                                    <a href=tel:0151 546 5585 class=d-inline-block>0151 546 5585</a>
                                 </h4>
                                 <ul class="list-unstyled bullet-check h5">
-                                    <li>Leading<span class=font-weight-semibold> Digital Marketing</span> Agency</li>
+                                    <li>Leading<span class=font-weight-semibold> Web Development </span> Company</li>
                                     <li><span class=font-weight-semibold>10+</span> Websites Launched</li>
-                                    <li><span class=font-weight-semibold>$10K+</span> Client Revenue Generated</li>
+                                    <li><span class=font-weight-semibold>$5K+</span> Client Revenue Generated</li>
                                 </ul>
 
                             </div>
@@ -176,8 +145,8 @@
             </div>
             <div class=footer__middle>
                 <div class=container>
-                    <div class=mid-con-wrap>
-                        <h4 class="fm-togglerBtn">Digital Marketing Services <i class=icon-down-arrow></i></h4>
+                   <!-- <div class=mid-con-wrap>
+                        <h4 class="fm-togglerBtn">Web Development Services <i class=icon-down-arrow></i></h4>
                         <div class=fm-togglerBlock>
                             <div id=footer-menu1 class=footer-menu>
                                 <ul id=menu-digital-marketing-services class="navbar-nav ml-auto">
@@ -205,37 +174,41 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class=mid-con-wrap>
-                        <h4 class="fm-togglerBtn">Company <i class=icon-down-arrow></i></h4>
+                    </div>-->
+                    <div style="width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;" class=mid-con-wrap>
+                        <h4 class="fm-togglerBtn"> Company <i class=icon-down-arrow></i></h4>
                         <div class=fm-togglerBlock>
                             <div id=footer-menu2 class=footer-menu>
                                 <ul id=menu-company class="navbar-nav ml-auto">
                                     <li id=menu-item-32149
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32149 nav-item">
-                                        <a href=company/index.html class=nav-link>About Arm solutions</a>
+                                        <a href="{% url 'index' %}" class=nav-link>About Arm solutions</a>
                                     </li>
-                                    <li id=menu-item-32150
+                                 <!--   <li id=menu-item-32150
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32150 nav-item">
                                         <a href=company/testimonials/index.html class=nav-link>Testimonials</a>
-                                    </li>
+                                    </li>-->
                                     <li id=menu-item-32151
                                         class="menu-item menu-item-type-post_type_archive menu-item-object-ss_team menu-item-32151 nav-item">
-                                        <a href=meet-the-team/index.html class=nav-link>Meet The Team</a>
+                                        <a href="{% url 'meet_the_team' %}" class=nav-link>Meet The Team</a>
                                     </li>
-                                    <li id=menu-item-32152
+                                   <!-- <li id=menu-item-32152
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32152 nav-item">
-                                        <a href=company/careers/index.html class=nav-link>Careers</a>
+                                        <a href=company/careers/index.html class=nav-link>Careers</a>-->
                                     </li>
                                     <li id=menu-item-32153
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32153 nav-item">
-                                        <a href=contact/index.html class=nav-link>Contact Us</a>
+                                        <a href="{% url 'work' %}" class=nav-link>Contact Us</a>
+                                    </li>
+                                      <li id=menu-item-32144
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32144 nav-item">
+                                        <a href="{% url 'work' %}" class=nav-link>Our Work</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class=mid-con-wrap>
+                  <!--  <div class=mid-con-wrap>
                         <h4 class="fm-togglerBtn">Resources <i class=icon-down-arrow></i></h4>
                         <div class=fm-togglerBlock>
                             <div id=footer-menu3 class=footer-menu>
@@ -258,7 +231,7 @@
                                     </li>
 
                                 </ul>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
 
