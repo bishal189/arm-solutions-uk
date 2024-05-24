@@ -9,5 +9,5 @@ urlpatterns=[
     path('privacy_policy/',views.privacy_policy,name="privacy_policy"),
     path('contact/',views.contact,name='contact'),
     path('work/',views.work,name='work'),
-    path('services/'views.services,name='services'),
+    path('services/',views.services,name='services'),
 ]
