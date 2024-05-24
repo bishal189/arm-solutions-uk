@@ -15,13 +15,51 @@
                         <span class="font-weight-light d-lg-block">Arms Solution</span>
                         <span style="font-size:3rem;">Turning Ideas into Interactive Experiences</span>
                     </h1>
-                    <div class="typed-text btm-margin-md" data-aos=fade-left data-aos-duration=1000>
-                        <span class="h6 sm-block d-xs-block"> Transforming your vision into a stunning digital reality. We specialize in custom web development tailored to your business needs.</span>
-
-                        <span
-                            data-typed='{"stringsElement":"#typed-items","typeSpeed":70,"backSpeed":50,"backDelay":500,"startDelay":1000,"loop":true}'
-                            class=h6></span>
+                    <div class="typed-text btm-margin-md" data-aos="fade-left" data-aos-duration="1000">
+                        <span class="h6 sm-block d-xs-block">We are passionate about</span>
+                        <div id="typed-items">
+                            <p>Google.</p>
+                            <p>challenging our clients.</p>
+                            <p>digital marketing.</p>
+                            <p>our clients success.</p>
+                            <p>writing clean code.</p>
+                            <p>fostering creativity.</p>
+                            <p>innovation.</p>
+                            <p>designing beautiful websites.</p>
+                            <p>thought leadership.</p>
+                            <p>learning new technologies.</p>
+                            <p>SEO.</p>
+                            <p>helping brands grow.</p>
+                            <p>a great cup of coffee.</p>
+                            <p>conversion rate optimization.</p>
+                            <p>Facebook Advertising.</p>
+                            <p>Google Ads.</p>
+                            <p>content creation.</p>
+                            <p>branding.</p>
+                            <p>custom development.</p>
+                        </div>
+                        <span id="typed" class="h6"></span>
                     </div>
+                    
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            console.log('hello i am pringed')
+                            var typedItems = [];
+                            document.querySelectorAll("#typed-items p").forEach(function(item) {
+                                typedItems.push(item.textContent);
+                            });
+                    
+                            new Typed("#typed", {
+                                strings: typedItems,
+                                typeSpeed: 70,
+                                backSpeed: 50,
+                                backDelay: 500,
+                                startDelay: 1000,
+                                loop: true
+                            });
+                        });
+                    </script>
+                    
                     <div class="banner__form form__horizontal" data-aos=fade-up data-aos-duration=1000>
                         <div class=form-wrap>
                             <div class=form-body>
@@ -227,13 +265,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class=banner__logos data-aos=fade-down data-aos-duration=1000>
+                    {% comment %} <div class=banner__logos data-aos=fade-down data-aos-duration=1000>
                         <figure class="img-wrap d-inline-block m-0">
 
                             <span width=206 height=79 src="" class="attachment-full size-full"
                                 alt="Amazon ads verified partner" loading=lazy>
                         </figure>
-                    </div>
+                    </div> {% endcomment %}
                 </div>
             </div>
         </section>
@@ -333,7 +371,7 @@
                     </div>
                 </div>
                 <ul class="partners-logos list-inline text-center" data-aos=fade-up data-aos-duration=1000>
-                    <!-- <li class="list-inline-item grayscale-hover">
+                    {% comment %} <li class="list-inline-item grayscale-hover">
                         <img width=185 height=47 src=media/forbes-badge.svg class="attachment-full size-full"
                             alt=Forbes loading=lazy>
                     </li>
@@ -352,7 +390,7 @@
                     <li class="list-inline-item grayscale-hover">
                         <img width=290 height=61 src=media/business-week-badge.svg class="attachment-full size-full"
                             alt="Business Week" loading=lazy>
-                    </li> -->
+                    </li>  {% endcomment %}
                 </ul>
             </template>
         </section>
