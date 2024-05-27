@@ -1,6 +1,19 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title %}
+<title>ARM Solutions UK</title>
+{% endblock %}
+{% block meta %}
+<meta name="title" content="Web Development Services | ARM Solutions UK">
+<meta name="index" content="web development, UK web development, custom websites, ARM Solutions, UK software development">
+<meta name="description" content="Discover top-notch web development services in the UK with ARM Solutions. From custom websites to complex web applications, we bring your digital vision to life.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Custom Web Development Services | ARM Solutions UK">
+<meta property="og:description" content="ARM Solutions offers professional web development services in the UK. Specializing in custom websites and web applications, we deliver innovative digital solutions tailored to your needs.">
+      <meta property="og:image" content="https://arm-solutions.co.uk/static/images/logo.png"> <!-- Add an image URL for better engagement on social media -->
+      <meta property="og:url" content="https://www.arm-solutions.co.uk/static/images/logo.png"> <!-- Ensure this matches your site's URL -->
 
+{% endblock %}
 {% block content %}
 <body class="home page-template-default page page-id-1 has-sidebar">
 {% include 'includes/header.html' %}
