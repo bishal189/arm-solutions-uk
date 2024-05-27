@@ -128,6 +128,10 @@
                 <div class="collapse navbar-collapse collapse-block" id=navbarToggler>
                     <div id=navbarToggler class="collapse navbar-collapse collapse-block">
                         <ul id=menu-primary-menu class="navbar-nav ml-auto">
+                          <li id=menu-item-293344
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-293344 nav-item">
+                                <a href="{% url 'index'%}" class=nav-link>Home</a>
+                            </li>
                             <li id=menu-item-29344
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29344 nav-item">
                                 <a href="{% url 'services'%}" class=nav-link>Services</a>
@@ -157,28 +161,44 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Get the current URL
-            var currentUrl = window.location.href;
+        var currentUrl = window.location.href;
 
-            // Define a mapping between the URL keywords and the menu item IDs
-            var menuItems = [
-                { id: 'menu-item-29344', keyword: 'service' },
-                { id: 'menu-item-430', keyword: 'work' },
-                { id: 'menu-item-435', keyword: 'company' },
-                { id: 'menu-item-440', keyword: 'contact' }
-            ];
+// Define a mapping between the URL keywords and the menu item IDs
+var menuItems = [
+    { id: 'menu-item-29344', keyword: 'service' },
+    { id: 'menu-item-430', keyword: 'work' },
+    { id: 'menu-item-435', keyword: 'company' },
+    { id: 'menu-item-440', keyword: 'contact' }
+];
 
-            // Loop through each menu item
-            menuItems.forEach(function(item) {
-                // Check if the current URL contains the keyword
-                if (currentUrl.includes(item.keyword)) {
-                    // Get the <a> element inside the <li> with the specified id
-                    var linkElement = document.querySelector('#' + item.id + ' a');
+var isKeywordFound = false;
 
-                    // Add the 'gradient-text' class
-                    if (linkElement) {
-                        linkElement.classList.add('gradient-text');
-                    }
-                }
-            });
+// Loop through each menu item
+menuItems.forEach(function(item) {
+    // Check if the current URL contains the keyword
+    if (currentUrl.includes(item.keyword)) {
+        // Get the <a> element inside the <li> with the specified id
+        var linkElement = document.querySelector('#' + item.id + ' a');
+
+        // Add the 'gradient-text' class
+        if (linkElement) {
+            linkElement.classList.add('gradient-text');
+            isKeywordFound = true;
+            return; // Exit the loop since we found a match
+        }
+    }
+});
+
+// If no keyword was found and the URL is home (empty or exact match), highlight the home menu item
+
+//if (!isKeywordFound && (currentUrl === '' || currentUrl === 'https://yourdomain.com/' || currentUrl === 'https://yourdomain.com')) {
+if(!isKeywordFound && !currentUrl.includes('privacy_policy')){
+    var homeLinkElement = document.querySelector('#menu-item-293344 a'); // Assuming this is the ID for the home menu item
+    if (homeLinkElement) {
+        homeLinkElement.classList.add('gradient-text');
+    }
+}
+
+
         });
     </script>
