@@ -19,7 +19,10 @@
 {% block content %}
 <body
     class="page-template page-template-page-templates page-template-tpl-contact page-template-page-templatestpl-contact-php page page-id-4 has-sidebar">
+
+
 {% include 'includes/header.html' %}
+
         <main  style="margin-top:5rem;" id=main class=site-content>
             <!DOCTYPE html>
             <section class="inne-banner contact-banner bg-cover">
@@ -45,7 +48,7 @@
                                         >
 
                                         <div class='ginput_container ginput_container_text'>
-                                        <input name="fullname" type="text" class=medium  placeholder='Full Name*' aria-required=true
+                                        <input name="full_name" type="text" class=medium  placeholder='Full Name*' aria-required=true
                                     />
                                         </div>
                                     </li>
@@ -86,22 +89,8 @@
                                                 placeholder='How Can We Help You?'  rows=10
                                                 cols=50></textarea></div>
                                     </li>
-                                    <li id=field_3_9
-                                        class="gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible"
-                                        data-js-reload=field_3_9></li>
-                                    <li id=field_3_20
-                                        class="gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible"
-                                        data-js-reload=field_3_20></li>
-                                    <li id=field_3_10
-                                        class="gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible"
-                                        data-js-reload=field_3_10></li>
-                                    <li id=field_3_12
-                                        class="gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible"
-                                        data-js-reload=field_3_12>
-                                        <div class='ginput_container ginput_container_text'><input name=input_12
-                                                id=input_3_12 type=hidden class=gform_hidden aria-invalid=false
-                                                value=Prospect></div>
-                                    </li>
+                                        <input type="hidden" name="referer" value="{{ request.path }}">
+
                                     <li id=field_3_13
                                         class="gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible"
                                         data-js-reload=field_3_13>

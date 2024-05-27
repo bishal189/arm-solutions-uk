@@ -4,77 +4,56 @@
                 <div class=container>
                     <div class="column-wrap d-flex flex-wrap">
                         <div class=footer__top-form data-aos=fade-right data-aos-duration=1000>
+                        {% if not contact %}
+
                             <div class='gf_browser_chrome gform_wrapper form-display2_wrapper gform_legacy_markup_wrapper'
                                 id=gform_wrapper_2 style=display:none>
                                 <div class=gform_heading>
                                     <h3 class="gform_title">Get Started</h3>
                                 </div>
-                                <form method=post enctype=multipart/form-data target=gform_ajax_frame_2 id=gform_2
-                                    class='form-display2 gform_legacy_markup' action=novalidate>
+                                <form method=post action="{% url 'contact' %}"
+                                    class='form-display2 gform_legacy_markup' >
+                                    {% csrf_token %}
                                     <div class='gform_body gform-body'>
                                         <ul id=gform_fields_2
                                             class='gform_fields top_label form_sublabel_below description_below'>
                                             <li id=field_2_1
                                                 class="gfield user-icon gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
-                                                data-js-reload=field_2_1><label class=gfield_label
-                                                    for=input_2_1>Name<span class=gfield_required><span
-                                                            class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                                <div class='ginput_container ginput_container_text'><input name=input_1
-                                                        data-ga-custom-dimension-key=dimension1 id=input_2_1 type=text
-                                                        value class=medium tabindex=500 placeholder='Full Name*'
-                                                        aria-required=true
-                                                        aria-invaldata-ga-custom-dimension-key=dimension1 id=false>
+                                               >
+                                                <div class='ginput_container ginput_container_text'><input name="full_name" type=text                                                        class=medium  placeholder='Full Name*'                                                        aria-required=true
+                                                        >
                                                 </div>
                                             </li>
-                                            <li id=field_2_19
-                                                class="gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible"
-                                                data-js-reload=field_2_19>
-                                                <div class='ginput_container ginput_container_text'><input name=input_19
-                                                        id=input_2_19 type=hidden class=gform_hidden aria-invalid=false
-                                                        value></div>
-                                            </li>
+
                                             <li id=field_2_2
                                                 class="gfield mail-icon gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
-                                                data-js-reload=field_2_2><label class=gfield_label for=input_2_2>Email
-                                                    Address<span class=gfield_required><span
-                                                            class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                                >
                                                 <div class='ginput_container ginput_container_email'>
-                                                    <input name=input_2 data-ga-custom-dimension-key=dimension2
-                                                        id=input_2_2 type=email value class=medium tabindex=501
-                                                        placeholder='Email Address*' aria-required=true
-                                                        aria-invaldata-ga-custom-dimension-key=dimension2 id=false>
+                                                    <input name="email" type=email class=medium                                                         placeholder='Email Address*' aria-required=true                                  >
                                                 </div>
                                             </li>
                                             <li id=field_2_3
                                                 class="gfield phone-icon gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
-                                                data-js-reload=field_2_3><label class=gfield_label for=input_2_3>Phone
-                                                    Number<span class=gfield_required><span
-                                                            class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                                <div class='ginput_container ginput_container_phone'><input name=input_3
-                                                        data-ga-custom-dimension-key=dimension3 id=input_2_3 type=tel
-                                                        value class=medium tabindex=502 placeholder='Phone Number*'
-                                                        aria-required=true
-                                                        aria-invaldata-ga-custom-dimension-key=dimension3 id=false>
+                                                data-js-reload=field_2_3>
+                                                <div class='ginput_container ginput_container_phone'><input name="phone_number" type=tel                                                         class=medium  placeholder='Phone Number*'                                                        aria-required=true
+                                                        >
                                                 </div>
                                             </li>
                                             <li id=field_2_4
                                                 class="gfield company-icon field_sublabel_below field_description_below gfield_visibility_visible"
-                                                data-js-reload=field_2_4><label class=gfield_label
-                                                    for=input_2_4>Company</label>
-                                                <div class='ginput_container ginput_container_text'><input name=input_4
-                                                        id=input_2_4 type=text value class=medium tabindex=503
-                                                        placeholder=Company aria-invalid=false></div>
+                                                data-js-reload=field_2_4>
+                                                <div class='ginput_container ginput_container_text'><input name="company"                                                         type=text  class=medium                                                         placeholder=Company >
+                                                </div>
                                             </li>
 
                                             <li id=field_2_6
                                                 class="gfield help-icon focus-increase field_sublabel_below field_description_below gfield_visibility_visible"
-                                                data-js-reload=field_2_6><label class=gfield_label for=input_2_6>How can
-                                                    we help you?</label>
+                                                data-js-reload=field_2_6>
                                                 <div class='ginput_container ginput_container_textarea'><textarea
-                                                        name=input_6 id=input_2_6 class='textarea medium' tabindex=506
-                                                        placeholder='How can we help you?' aria-invalid=false rows=10
-                                                        cols=50></textarea></div>
+                                                        name="help" class='textarea medium' placeholder='How can we help you?'  rows=10                                                        cols=50></textarea>
+                                                        </div>
                                             </li>
+                                             <input type="hidden" name="referer" value="{{ request.path }}">
                                             <li id=field_2_12
                                                 class="gfield gform_hidden field_sublabel_below field_description_below gfield_visibility_visible"
                                                 data-js-reload=field_2_12></li>
@@ -124,6 +103,7 @@
                                     </p>
                                 </form>
                             </div>
+                            {% endif %}
 
                         </div>
                         <div class=column-right data-aos=fade-left data-aos-duration=1000>

@@ -1,4 +1,5 @@
 {% load static %}
+
     <svg xmlns=http://www.w3.org/2000/svg viewBox="0 0 0 0" width=0 height=0 focusable=false role=none
         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
@@ -126,6 +127,7 @@
                 <a class=navbar-brand href="{% url 'index' %}"><img fetchpriority=high src="{% static 'images/logo.png' %}"
                         alt="SmartSites Digital Marketing Agency" style="width: 120px ;height:80px;"></a>
                 <div class="collapse navbar-collapse collapse-block" id=navbarToggler>
+
                     <div id=navbarToggler class="collapse navbar-collapse collapse-block">
                         <ul id=menu-primary-menu class="navbar-nav ml-auto">
                           <li id=menu-item-293344
@@ -152,18 +154,20 @@
                 </div>
             </div>
             <a href=tel:2018706000 class="click-call gradient-text h5">07444106984</a>
-            <button type=button class="btn toggle-menu-btn" data-toggle=modal data-target=#custom-toggle-menu>
+
+            <button type=button class="btn toggle-menu-btn" data-toggle=modal data-target="#navbarToggler">
                 <span class=bar-icon></span>
             </button>
         </nav>
     </header>
+
+
   <!-- Include the script at the end of the body -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Get the current URL
         var currentUrl = window.location.href;
 
-// Define a mapping between the URL keywords and the menu item IDs
 var menuItems = [
     { id: 'menu-item-29344', keyword: 'service' },
     { id: 'menu-item-430', keyword: 'work' },
