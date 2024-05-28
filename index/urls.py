@@ -10,5 +10,6 @@ urlpatterns=[
     path('contact/',views.contact,name='contact'),
     path('work/',views.work,name='work'),
     path('services/',views.services,name='services'),
+    path('service/<service_slug>',views.service,name="service"),
 
 ]
