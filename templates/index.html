@@ -17,7 +17,7 @@
 {% block content %}
 <body class="home page-template-default page page-id-1 has-sidebar">
 {% include 'includes/header.html' %}
-    <main id=main class=site-content>
+    <main style="margin-top:-110px" id=main class=site-content>
         <section class="banner banner-home">
             <img  class="d-block lazyload"
                     src="{% static 'images/banner.jpg' %}" style="width:100%; object-fit: fill;">
@@ -26,6 +26,7 @@
                 <div class=banner__content>
                     <h1 data-aos="fade-down" data-aos-duration="1000">
                         <span class="font-weight-light d-lg-block">Arms Solution</span>
+
                         <span style="font-size:3rem;">Turning Ideas into Interactive Experiences</span>
                     </h1>
                     <div class="typed-text btm-margin-md" data-aos="fade-left" data-aos-duration="1000">
@@ -73,6 +74,7 @@
                                 <div class='gf_browser_chrome gform_wrapper form-display1_wrapper gform_legacy_markup_wrapper'
                                     id=gform_wrapper_1>
                                     <form method=post  class='form-display1'  action="{%  url 'contact' %}" novalidate>
+                                    {% csrf_token %}
                                         <div class='gform_body gform-body'>
                                             <div id=gform_page_1_1 class=gform_page>
                                                 <div class=gform_page_fields>
@@ -104,7 +106,7 @@
                                                             class="gfield phone-icon field_sublabel_below field_description_below gfield_visibility_visible"
                                                             data-js-reload=field_1_4>
                                                             <div class='ginput_container ginput_container_phone'>
-                                                                <input name="phone_numbe"
+                                                                <input name="phone_number"
                                                                     type=tel value class=medium
                                                                     tabindex=154 placeholder='Phone Number'
                                                                     required>

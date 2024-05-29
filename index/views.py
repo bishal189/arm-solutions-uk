@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from index.models import Contact
 from index.models import Service
 
@@ -29,6 +29,7 @@ def contact(request):
             company=data.get('company','')
             Contact.objects.create(full_name=full_name,email=email,phone_number=phone_number,help=help,company=company)
             referer = request.POST.get('referer', '/')
+            print(referer)
             return redirect(referer)
         except Exception as e:
             print(e)
