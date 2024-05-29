@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
-
+{% block title %}
+<title>{{service.title}}</title>
+{% endblock %}
 {% block content %}
 
 
@@ -29,231 +31,14 @@
                            class=inner-banner__alttext data-aos=fade-up data-aos-duration=1000>
                            <div
                               class=breadcrumbs>
-                              <h1>Custom Website Design Agency Services</h1>
+                              <h1>{{service.top_header}}</h1>
                            </div>
-                           <h2>Our experts will create your perfect website</h2>
-                           <p>See why we are consistently rated as the best website design agency for businesses like yours.</p>
-                           <div
-                              class=inner-banner__altpartner>
-                              <ul
-                                 class=list-unstyled>
-                                <!-- <li>
-                                    <img
-                                       width=60 height=51 src=https://www.smartsites.com/media/google-partner-premier-2024.svg class="attachment-full size-full" alt="Google Partner- Premier 2024" fetchpriority=high data-preload=1>
-                                 </li>
-                                 <li>
-                                    <img
-                                       width=144 height=50 src=https://www.smartsites.com/media/microsoft-ads-select-partner-2024.svg class="attachment-full size-full" alt="Microsoft Advertising Select Partner 2024" fetchpriority=high data-preload=1>
-                                 </li>
-                                 <li>
-                                    <img
-                                       width=107 height=50 src=https://www.smartsites.com/media/meta-business-partner-smartsites.svg class="attachment-full size-full" alt="Meta Business Partner" fetchpriority=high data-preload=1>
-                                 </li>
-                                 <li>
-                                    <img
-                                       width=206 height=79 src=https://www.smartsites.com/media/amazon-ads-verified-partner-2023.svg class="attachment-full size-full" alt="Amazon Ads Partner" fetchpriority=high data-preload=1>
-                                 </li>
-                                 <li>
-                                    <img
-                                       width=118 height=50 src=https://www.smartsites.com/media/hubspot-certified-partner-1.svg class="attachment-full size-full" alt="Hubspot Certified Partner" fetchpriority=high data-preload=1>
-                                 </li>
-                                 <li>
-                                    <img
-                                       width=108 height=49 src=https://www.smartsites.com/media/inc-5000-smartsites-in-7-years.svg class="attachment-full size-full" alt="Inc. 5000, SmartSites in 7 years" fetchpriority=high data-preload=1>
-                                 </li>
-                                 <li>
-                                    <img
-                                       width=85 height=49 src=https://www.smartsites.com/media/bbb-a-plus-rating-smartsites.svg class="attachment-full size-full" alt="BBB A+ rating" fetchpriority=high data-preload=1>
-                                 </li>
-                                 <li>
-                                    <img
-                                       width=117 height=48 src=https://www.smartsites.com/media/klaviyo-master-plus-champion.svg class="attachment-full size-full" alt="Klaviyo Master Plus Champion" fetchpriority=high data-preload=1>
-                                 </li>-->
+                           <h2>{{service.content_header_1}}</h2>
+                           <p>{{service.content_text_1}}</p>
 
-                              </ul>
-                           </div>
                         </div>
                      </div>
-                     <!--
-                     <div
-                        class="col-lg-5 col-xxl-4">
-                        <div
-                           class=inner-banner__altform data-aos=fade-down data-aos-duration=1000>
-                          <div
-                              class=form-wrap>
-                              <div
-                                 class=form-heading>
-                                 <h2>Improve Results</h2>
-                                 <p>with a better website today</p>
-                              </div>
-                              <script>var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});</script>
-                              <div
-                                 class='gf_browser_chrome gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme=legacy data-form-index=0 id=gform_wrapper_20 >
-                                 <form
-                                    method=post enctype=multipart/form-data target=gform_ajax_frame_20 id=gform_20  action=https://www.smartsites.com/web-design/ data-formid=20 novalidate>
-                                    <div
-                                       id=gf_progressbar_wrapper_20 class=gf_progressbar_wrapper data-start-at-zero>
-                                       <h3 class="gf_progressbar_title">Step <span
-                                          class=gf_step_current_page>1</span> of <span
-                                          class=gf_step_page_count>2</span></h3>
-                                       <div
-                                          class='gf_progressbar gf_progressbar_custom' aria-hidden=true>
-                                          <div
-                                             class='gf_progressbar_percentage percentbar_custom percentbar_50' style='width:50%; color:#fff; background-color:#ffc720;'><span>50%</span></div>
-                                       </div>
-                                    </div>
-                                    <div
-                                       class='gform-body gform_body'>
-                                       <div
-                                          id=gform_page_20_1 class='gform_page ' data-js=page-field-id-1 >
-                                          <div
-                                             class=gform_page_fields>
-                                             <ul
-                                                id=gform_fields_20 class='gform_fields top_label form_sublabel_below description_below validation_below'>
-                                                <li
-                                                   id=field_20_1 class="gfield gfield--type-text icon-user gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_1 >
-                                                   <label
-                                                      class='gfield_label gform-field-label' for=input_20_1>Full Name<span
-                                                      class=gfield_required><span
-                                                      class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                                   <div
-                                                      class='ginput_container ginput_container_text'><input
-                                                      name=input_1 data-ga-custom-dimension-key=dimension1 id=input_20_1 type=text value class=medium   tabindex=23 placeholder='Full Name' aria-required=true aria-invaldata-ga-custom-dimension-key=dimension1 id=false></div>
-                                                </li>
-                                                <li
-                                                   id=field_20_3 class="gfield gfield--type-email icon-envelope gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_3 >
-                                                   <label
-                                                      class='gfield_label gform-field-label' for=input_20_3>Email Address<span
-                                                      class=gfield_required><span
-                                                      class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                                   <div
-                                                      class='ginput_container ginput_container_email'>
-                                                      <input
-                                                         name=input_3 data-ga-custom-dimension-key=dimension2 id=input_20_3 type=email value class=medium tabindex=24  placeholder='Email Address' aria-required=true aria-invaldata-ga-custom-dimension-key=dimension2 id=false>
-                                                   </div>
-                                                </li>
-                                                <li
-                                                   id=field_20_4 class="gfield gfield--type-phone icon-phone gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_4 >
-                                                   <label
-                                                      class='gfield_label gform-field-label' for=input_20_4>Phone Number<span
-                                                      class=gfield_required><span
-                                                      class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                                   <div
-                                                      class='ginput_container ginput_container_phone'><input
-                                                      name=input_4 data-ga-custom-dimension-key=dimension3 id=input_20_4 type=tel value class=medium tabindex=25 placeholder='Phone Number' aria-required=true aria-invaldata-ga-custom-dimension-key=dimension3 id=false></div>
-                                                </li>
-                                             </ul>
-                                          </div>
-                                          <div
-                                             class='gform_page_footer top_label'>
-                                             <input
-                                                type=button id=gform_next_button_20_20 class='gform_next_button gform-theme-button button' value='Get Your Free Proposal' tabindex=26 onclick='if(window["gf_submitting_20"]){return false;}window["gf_submitting_20"]=true;jQuery("#gform_target_page_number_20").val("2");  jQuery("#gform_20").trigger("submit",[true]); ' onkeypress='if(event.keyCode==13){if(window["gf_submitting_20"]){return false;}window["gf_submitting_20"]=true;}if( event.keyCode == 13 ){ jQuery("#gform_target_page_number_20").val("2");  jQuery("#gform_20").trigger("submit",[true]); } '>
-                                          </div>
-                                       </div>
-                                       <div
-                                          id=gform_page_20_2 class=gform_page data-js=page-field-id-20 style=display:none;>
-                                          <div
-                                             class=gform_page_fields>
-                                             <ul
-                                                id=gform_fields_20_2 class='gform_fields top_label form_sublabel_below description_below validation_below'>
-                                                <li
-                                                   id=field_20_5 class="gfield gfield--type-text icon-company gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_5 >
-                                                   <label
-                                                      class='gfield_label gform-field-label' for=input_20_5>Company<span
-                                                      class=gfield_required><span
-                                                      class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                                   <div
-                                                      class='ginput_container ginput_container_text'><input
-                                                      name=input_5 id=input_20_5 type=text value class=medium   tabindex=27 placeholder=Company aria-required=true aria-invalid=false></div>
-                                                </li>
-                                                <li
-                                                   id=field_20_6 class="gfield gfield--type-multiselect icon-services js-multiselect field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_6 >
-                                                   <label
-                                                      class='gfield_label gform-field-label' for=input_20_6>Services</label>
-                                                   <div
-                                                      class='ginput_container ginput_container_multiselect'>
-                                                      <select
-                                                         multiple=multiple  size=7 name=input_6[] data-multipleselect='{"includeSelectAllOption":true,"nonSelectedText":"Services you are interested in*"}' id=input_20_6 class='medium gfield_select' tabindex=28  aria-invaldata-multipleselect='{"includeSelectAllOption":true,"nonSelectedText":"Services you are interested in*"}' id=false  >
-                                                         <option
-                                                            value='WEBSITE DESIGN' >Web Design/Development</option>
-                                                         <option
-                                                            value=SEO >Search Engine Optimization</option>
-                                                         <option
-                                                            value=PPC >Pay Per Click Marketing</option>
-                                                         <option
-                                                            value='Email Marketing' >Email &amp; SMS Marketing</option>
-                                                         <option
-                                                            value='Social Media' >Social Media Management</option>
-                                                      </select>
-                                                   </div>
-                                                </li>
-                                                <li
-                                                   id=field_20_7 class="gfield gfield--type-textarea icon-help gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_7 >
-                                                   <label
-                                                      class='gfield_label gform-field-label' for=input_20_7>How Can We Help?<span
-                                                      class=gfield_required><span
-                                                      class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                                   <div
-                                                      class='ginput_container ginput_container_textarea'><textarea name=input_7 id=input_20_7 class='textarea medium' tabindex=29   placeholder='How Can We Help?' aria-required=true aria-invalid=false   rows=10 cols=50></textarea></div>
-                                                </li>
-                                                <li
-                                                   id=field_20_19 class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_19 >
-                                                   <div
-                                                      class='ginput_container ginput_container_text'><input
-                                                      name=input_19 id=input_20_19 type=hidden class=gform_hidden  aria-invalid=false value></div>
-                                                </li>
-                                                <li
-                                                   id=field_20_8 class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_8 ></li>
-                                                <li
-                                                   id=field_20_10 class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_10 ></li>
-                                                <li
-                                                   id=field_20_11 class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_11 ></li>
-                                                <li
-                                                   id=field_20_13 class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_13 >
-                                                   <div
-                                                      class='ginput_container ginput_container_text'><input
-                                                      name=input_13 id=input_20_13 type=hidden class=gform_hidden  aria-invalid=false value='Contact Form'></div>
-                                                </li>
-                                                <li
-                                                   id=field_20_22 class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  data-js-reload=field_20_22 >
-                                                   <div
-                                                      class='ginput_container ginput_container_text'><input
-                                                      name=input_22 id=input_20_22 type=hidden class=gform_hidden  aria-invalid=false value=Prospect></div>
-                                                </li>
-                                             </ul>
-                                          </div>
-                                          <div
-                                             class='gform_page_footer top_label'><input
-                                             type=submit id=gform_previous_button_20 class='gform_previous_button gform-theme-button gform-theme-button--secondary button' value=Previous tabindex=30 onclick='if(window["gf_submitting_20"]){return false;}  if( !jQuery("#gform_20")[0].checkValidity || jQuery("#gform_20")[0].checkValidity()){window["gf_submitting_20"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_20"]){return false;} if( !jQuery("#gform_20")[0].checkValidity || jQuery("#gform_20")[0].checkValidity()){window["gf_submitting_20"]=true;}  jQuery("#gform_20").trigger("submit",[true]); }'> <input
-                                             type=submit id=gform_submit_button_20 class='gform_button button' value='Get Your Free Proposal' tabindex=31 onclick='if(window["gf_submitting_20"]){return false;}  if( !jQuery("#gform_20")[0].checkValidity || jQuery("#gform_20")[0].checkValidity()){window["gf_submitting_20"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_20"]){return false;} if( !jQuery("#gform_20")[0].checkValidity || jQuery("#gform_20")[0].checkValidity()){window["gf_submitting_20"]=true;}  jQuery("#gform_20").trigger("submit",[true]); }'> <input
-                                             type=hidden name=gform_ajax value='form_id=20&amp;title=&amp;description=&amp;tabindex=23&amp;theme=legacy'>
-                                             <input
-                                                type=hidden class=gform_hidden name=is_submit_20 value=1>
-                                             <input
-                                                type=hidden class=gform_hidden name=gform_submit value=20>
-                                             <input
-                                                type=hidden class=gform_hidden name=gform_unique_id value>
-                                             <input
-                                                type=hidden class=gform_hidden name=state_20 value='WyJbXSIsIjMwODEyOWNhMjQwZTA3ZmYzYTI2YmQ1YjY2ODJjOWRkIl0='>
-                                             <input
-                                                type=hidden class=gform_hidden name=gform_target_page_number_20 id=gform_target_page_number_20 value=2>
-                                             <input
-                                                type=hidden class=gform_hidden name=gform_source_page_number_20 id=gform_source_page_number_20 value=1>
-                                             <input
-                                                type=hidden name=gform_field_values value>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <p
-                                       style="display: none !important;" class=akismet-fields-container data-prefix=ak_>
-                                       <label>&#916;<textarea name=ak_hp_textarea cols=45 rows=8 maxlength=100></textarea></label><input
-                                    </p>
-                                 </form>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     -->
+
                   </div>
                </div>
             </section>
@@ -270,8 +55,8 @@
                            class="col-lg-6  align-self-center">
                            <div
                               class=webdesign-services__text data-aos=fade-up data-aos-duration=1000>
-                              <h3>Elevate your business with a beautiful website that your customers will love.</h3>
-                              <p>Get a trusted website that wins customers. Our award-winning website design team tailors your website to present your brand in the most beautiful way.</p>
+                              <h3>{{service.content_header_2}}</h3>
+                              <p>{{service.content_text_2}}</p>
                            </div>
                         </div>
                         <div
@@ -298,8 +83,8 @@
                            class="col-lg-6 order-lg-2 order-1 align-self-center">
                            <div
                               class=webdesign-services__text data-aos=fade-up data-aos-duration=1000>
-                              <h3>Drive users to action and grow your brand with a results-driven experience.</h3>
-                              <p>We plan your website right from the start with detailed search keyword and competitor research. We tailor your site to drive results with clear CTAs. Your website will load extremely fast and look great on all devices.</p>
+                              <h3>{{service.content_header_3}}</h3>
+                              <p>{{service.content_text_3}}</p>
                            </div>
                         </div>
                         <div
@@ -322,8 +107,8 @@
                            class="col-lg-6  align-self-center">
                            <div
                               class=webdesign-services__text data-aos=fade-up data-aos-duration=1000>
-                              <h3>We get to know your business to understand what your audience wants.</h3>
-                              <p>You only get one chance to make a first impression. Your website will demonstrate your expertise and position your business as the trusted authority in your industry.</p>
+                              <h3>{{service.content_header_4}}</h3>
+                              <p>{{service.content_text_4}}</p>
                            </div>
                         </div>
                         <div
@@ -369,7 +154,7 @@
 
                </div>
             </section>
-
+{% if website %}
             <section
                class=services-features>
                <div
@@ -647,6 +432,7 @@
                   </div>
                </div>
             </section>
+            {% endif %}
 
             <section
                class=services-works>

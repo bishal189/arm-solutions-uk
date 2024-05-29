@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from index.models import Contact
-# Create your views here.
+from index.models import Service
 
 def index(request):
     return render(request,'index.html')
@@ -29,7 +29,6 @@ def contact(request):
             company=data.get('company','')
             Contact.objects.create(full_name=full_name,email=email,phone_number=phone_number,help=help,company=company)
             referer = request.POST.get('referer', '/')
-            print(referer)
             return redirect(referer)
         except Exception as e:
             print(e)
@@ -39,12 +38,22 @@ def services(request):
     return render(request,'services.html')
 
 def service(request,service_slug):
-    return render(request,'service.html')
+    try:
+        service=Service.objects.get(title_slug=service_slug)
+        context={
+            'service':service
+            }
+        if service_slug=="web-design-and-development" or service_slug=="e-commerce-development" or service_slug=="web-maintenance-and-support":
+            context['website']=True
+        return render(request,'service.html',context)
+    except Exception as e:
+        print(e)
+        return JsonResponse({"error":"page doesnot exists"},status=400)
+
 
 import json
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from index.models import Service
 @csrf_exempt
 def run_service_script(request):
     try:
