@@ -420,18 +420,7 @@
             padding-bottom: 3.75rem
         }
 
-        @media (max-width: 575.98px) {
-            .banner {
-                background: url("{% static 'images/banner.jpg' %}") center no-repeat !important;
-                background-size: cover;
-            }
-        }
-        @media (min-width: 575.98px) {
-            .banner {
-                background: url("{% static 'images/banner.jpg' %}") center no-repeat !important;
-                background-size: cover;
-            }
-        }
+
 
         @media (max-width: 376px) {
             .contact-banner {

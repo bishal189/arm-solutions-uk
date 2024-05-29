@@ -73,7 +73,7 @@
 
                                 <div class='gf_browser_chrome gform_wrapper form-display1_wrapper gform_legacy_markup_wrapper'
                                     id=gform_wrapper_1>
-                                    <form method=post  class='form-display1'  action="{%  url 'contact' %}" novalidate>
+                                    <form method=post  class='form-display1'  action="{%  url 'contact' %}" >
                                     {% csrf_token %}
                                         <div class='gform_body gform-body'>
                                             <div id=gform_page_1_1 class=gform_page>
@@ -84,10 +84,10 @@
                                                             class="gfield user-icon gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
                                                             data-js-reload=field_1_1>
                                                             <div class='ginput_container ginput_container_text'>
-                                                                <input name="full_name"
-                                                                    type=text value class=medium
+                                                                <input name="full_name" required
+                                                                    type=text  class=medium
                                                                     tabindex=152 placeholder='Full Name'
-                                                                    aria-required=true
+
                                                                     >
                                                             </div>
                                                         </li>
@@ -95,10 +95,10 @@
                                                             class="gfield mail-icon gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"
                                                             data-js-reload=field_1_3>
                                                             <div class='ginput_container ginput_container_email'>
-                                                                <input name="email"
+                                                                <input name="email" required
                                                                     type=email value class=medium
                                                                     tabindex=153 placeholder='Email Address'
-                                                                    aria-required=true
+
                                                                     >
                                                             </div>
                                                         </li>
@@ -106,17 +106,17 @@
                                                             class="gfield phone-icon field_sublabel_below field_description_below gfield_visibility_visible"
                                                             data-js-reload=field_1_4>
                                                             <div class='ginput_container ginput_container_phone'>
-                                                                <input name="phone_number"
+                                                                <input name="phone_number" required
                                                                     type=tel value class=medium
                                                                     tabindex=154 placeholder='Phone Number'
-                                                                    required>
+                                                                    >
                                                             </div>
                                                         </li>
                                                          <input type="hidden" name="referer" value="{{ request.path }}">
                                                     </ul>
                                                 </div>
                                                 <div class='gform_page_footer top_label'>
-                                                    <input type=submit id=gform_next_button_1_5
+                                                    <input type=submit
                                                         class='gform_next_button button' value='Get Started'
                                                         tabindex=155
                                                        >
