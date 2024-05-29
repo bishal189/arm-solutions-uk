@@ -290,7 +290,7 @@
                     <li>
                         <div class="featured-service same-height" data-aos=fade-up data-aos-duration=1000>
                             <i class="icon icon-web-programming"></i>
-                            <h3 class="h5 font-weight-bold"><a class=stretched-link>Web
+                            <h3 class="h5 font-weight-bold"><a href="{% url 'service' 'web-design-and-development' %}" class=stretched-link>Web
                                     Design And Development</a></h3>
                             <p>Create a brand and communicate your value.</p>
                         </div>
@@ -298,7 +298,7 @@
                     <li>
                         <div class="featured-service same-height" data-aos=fade-up data-aos-duration=1000>
                             <i class="icon icon-analysis"></i>
-                            <h3 class="h5 font-weight-bold"><a 
+                            <h3 class="h5 font-weight-bold"><a href="{% url 'service' 'e-commerce-development' %}"
                                     class=stretched-link>E-Commerce Solutions</a></h3>
                             <p>Build robust online stores that drive sales and enhance customer experiences.</p>
                         </div>
@@ -306,7 +306,7 @@
                     <li>
                         <div class="featured-service same-height" data-aos=fade-up data-aos-duration=1000>
                             <i class="icon icon-objective"></i>
-                            <h3 class="h5 font-weight-bold"><a
+                            <h3 class="h5 font-weight-bold"><a href="{% url 'service' 'ppc-services' %}"
                                     class=stretched-link>PPC</a></h3>
                             <p>Put your business in front of the right people today.</p>
                         </div>
@@ -314,14 +314,14 @@
                     <li>
                         <div class="featured-service same-height" data-aos=fade-up data-aos-duration=1000>
                             <i class="icon icon-email-marketing"></i>
-                            <h3 class="h5 font-weight-bold"><a  class=stretched-link>Email & SMS</a></h3>
+                            <h3 class="h5 font-weight-bold"><a href="{% url 'service' 'email-and-sms-services' %}"  class=stretched-link>Email & SMS</a></h3>
                             <p>Get more out of your current website visitors.</p>
                         </div>
                     </li>
                     <li>
                         <div class="featured-service same-height" data-aos=fade-up data-aos-duration=1000>
                             <i class="icon icon-social-media"></i>
-                            <h3 class="h5 font-weight-bold"><a  class=stretched-link>Website Maintenance</a></h3>
+                            <h3 class="h5 font-weight-bold"><a href="{% url 'service' 'web-maintenance-and-support' %}"  class=stretched-link>Website Maintenance</a></h3>
                             <p>Keep your website secure, fast, and up-to-date with our ongoing support services</p>
                         </div>
                     </li>
@@ -331,11 +331,11 @@
         <section class="our-story container-fluid lazyload">
             <template>
                 <div class=row>
-                    <div style="margin-top:3rem;" class="lazyload col-xl-6 column" data-aos=fade-up-right data-aos-duration=10>
-                        <template><img style="margin-top:3rem;" src="{% static 'images/united.jpg' %}"
+                    <div style="margin-top:3rem;" class=" col-xl-6 column" data-aos=fade-up-right data-aos-duration=10>
+                        <img style="margin-top:3rem;" src="{% static 'images/united.jpg' %}"
                                 style="width:100%; object-fit: fill;" />
 
-                        </template>
+
                     </div>
                     <div class="col-xl-6 column" data-aos=fade-up-left data-aos-duration=1000>
                         <h2 class="font-weight-semibold">Our Story</h2>
@@ -347,28 +347,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="partners-logos list-inline text-center" data-aos=fade-up data-aos-duration=1000>
-                    {% comment %} <li class="list-inline-item grayscale-hover">
-                        <img width=185 height=47 src=media/forbes-badge.svg class="attachment-full size-full"
-                            alt=Forbes loading=lazy>
-                    </li>
-                    <li class="list-inline-item grayscale-hover">
-                        <img width=320 height=64 src=media/bloomberg-badge.svg class="attachment-full size-full"
-                            alt=Bloomberg loading=lazy>
-                    </li>
-                    <li class="list-inline-item grayscale-hover">
-                        <img width=145 height=49 src=media/inc-badge.svg class="attachment-full size-full" alt=Inc.
-                            loading=lazy>
-                    </li>
-                    <li class="list-inline-item grayscale-hover">
-                        <img width=180 height=56 src=media/npr-badge.svg class="attachment-full size-full" alt=npr
-                            loading=lazy>
-                    </li>
-                    <li class="list-inline-item grayscale-hover">
-                        <img width=290 height=61 src=media/business-week-badge.svg class="attachment-full size-full"
-                            alt="Business Week" loading=lazy>
-                    </li>  {% endcomment %}
-                </ul>
+
             </template>
         </section>
         <section class="block-team container-fluid lazyload">
