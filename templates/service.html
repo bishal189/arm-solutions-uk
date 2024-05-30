@@ -5,7 +5,16 @@
 {% endblock %}
 {% block content %}
 
-
+{% block meta %}
+   <meta name="title" content="Our Service {{service.title}}| ARM Solutions UK">
+   <meta name="index" content="web development services,{{service.title}},{{service.top_header}}, software development, e-commerce solutions, web design, ARM Solutions, ARM Solutions services, UK web development">
+   <meta name="description" content="Explore the {{service.title}} services offered by ARM Solutions in the UK. {{service.top_header}}">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="{{service.title}} | ARM Solutions UK">
+   <meta property="og:description" content="Discover the comprehensive {{service.title}}  provided by ARM Solutions in the UK. {{service.content_header_1}}.">
+      <meta property="og:image" content="https://arm-solutions.co.uk/static/images/logo.png">
+      <meta property="og:url" content="https://www.arm-solutions.co.uk/static/images/logo.png">
+{% endblock %}
     <link
     rel=stylesheet href="{% static 'wp-content/cache/minify/2c27c.css' %}" media=all>
   <script async src="{% static 'wp-content/cache/minify/8a587.js' %}"></script>
