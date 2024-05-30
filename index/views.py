@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from index.models import Contact
 from index.models import Service
+from django.contrib import messages
 
 def index(request):
     return render(request,'index.html')
@@ -28,6 +29,7 @@ def contact(request):
             help=data.get("help","")
             company=data.get('company','')
             Contact.objects.create(full_name=full_name,email=email,phone_number=phone_number,help=help,company=company)
+            messages.success(request,"Your request has been submited")
             referer = request.POST.get('referer', '/')
             print(referer)
             return redirect(referer)

@@ -140,3 +140,14 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER='heritagehive872@gmail.com'
 EMAIL_HOST_PASSWORD='qozv drew svkw ufgx'
 
+
+
+# for mesasges 
+
+
+# for django mesages 
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+   
+}

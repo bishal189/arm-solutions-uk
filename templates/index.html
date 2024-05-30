@@ -16,9 +16,16 @@
 {% endblock %}
 {% block content %}
 <body class="home page-template-default page page-id-1 has-sidebar">
+
 {% include 'includes/header.html' %}
+
+{% include 'includes/alert.html' %}
     <main style="margin-top:-110px" id=main class=site-content>
+     
+        
         <section class="banner banner-home">
+            
+            
             <img  class="d-block lazyload"
                     src="{% static 'images/banner.jpg' %}" style="width:100%; object-fit: fill;">
   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); color: white; display: flex; align-items: center; justify-content: center; text-align: center;">
