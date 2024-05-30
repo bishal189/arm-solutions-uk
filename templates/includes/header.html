@@ -195,7 +195,7 @@ menuItems.forEach(function(item) {
 
 
 //if (!isKeywordFound && (currentUrl === '' || currentUrl === 'https://yourdomain.com/' || currentUrl === 'https://yourdomain.com')) {
-if(!isKeywordFound && !currentUrl.includes('privacy_policy')){
+if(!isKeywordFound && !(currentUrl.includes('privacy_policy')||currentUrl.includes('service'))){
     var homeLinkElement = document.querySelector('#menu-item-293344 a'); // Assuming this is the ID for the home menu item
     if (homeLinkElement) {
         homeLinkElement.classList.add('gradient-text');
