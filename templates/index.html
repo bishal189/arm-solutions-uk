@@ -144,10 +144,35 @@
                 </div>
             </div>
         </section>
-        <section class="featured-services text-center bg-cover text-white">
+
+
+        <style>
+.featured-services {
+    position: relative;
+    overflow: hidden; /* Ensures the image does not overflow */
+}
+
+#results_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    #results_image {
+        height: auto; /* Adjusts height for mobile devices */
+    }
+}
+</style>
+        <section  class="featured-services text-center bg-cover text-white">
 
             <picture>
-        <img width="1920" height="885" src="{% static 'images/index_results.avif' %}" style="position:absolute;height:100%;opacity:0.3" alt="Results-driven Marketing">
+        <img id="results_image" src="{% static 'images/index_results.avif' %}" style="position:absolute;opacity:0.2;object-fit:cover;" alt="Results-driven Marketing">
         
             </picture>
             <div class=container-fluid>
