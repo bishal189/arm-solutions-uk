@@ -29,7 +29,7 @@ def contact(request):
             help=data.get("help","")
             company=data.get('company','')
             Contact.objects.create(full_name=full_name,email=email,phone_number=phone_number,help=help,company=company)
-            messages.success(request,"Your request has been submited")
+            messages.success(request,"Your request has been submited.Our Team will contact You Soon")
             referer = request.POST.get('referer', '/')
             print(referer)
             return redirect(referer)
