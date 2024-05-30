@@ -147,7 +147,35 @@
         </section>
         <section class="featured-services text-center bg-cover text-white">
 
-                       <div class=container-fluid>
+            <picture>
+                <source data-srcset="{% static 'media/featured-services-bg.jpg' %}"
+                media="(min-width: 1537px) and (max-width: 1920px)">
+        <source data-srcset="{% static 'media/featured-services-bg-1536x708.jpg' %}"
+                media="(min-width: 1025px) and (max-width: 1536px)">
+        <source data-srcset="{% static 'media/featured-services-bg-1024x472.jpg' %}"
+                media="(min-width: 1008px) and (max-width: 1024px)">
+        <source data-srcset="{% static 'media/featured-services-bg-1007x464.jpg' %}"
+                media="(min-width: 769px) and (max-width: 1007px)">
+        <source data-srcset="{% static 'media/featured-services-bg-768x354.jpg' %}"
+                media="(min-width: 756px) and (max-width: 768px)">
+        <source data-srcset="{% static 'media/featured-services-bg-755x348.jpg' %}"
+                media="(min-width: 688px) and (max-width: 755px)">
+        <source data-srcset="{% static 'media/featured-services-bg-687x317.jpg' %}"
+                media="(min-width: 571px) and (max-width: 687px)">
+        <source data-srcset="{% static 'media/featured-services-bg-570x263.jpg' %}"
+                media="(min-width: 547px) and (max-width: 570px)">
+        <source data-srcset="{% static 'media/featured-services-bg-546x252.jpg' %}"
+                media="(min-width: 409px) and (max-width: 546px)">
+        <source data-srcset="{% static 'media/featured-services-bg-408x188.jpg' %}"
+                media="(min-width: 301px) and (max-width: 408px)">
+        <source data-srcset="{% static 'media/featured-services-bg-300x138.jpg' %}"
+                media="(min-width: 76px) and (max-width: 300px)">
+        <source data-srcset="{% static 'media/featured-services-bg-75x35.jpg' %}" media="(max-width: 75px)">
+        <img width="1920" height="885" data-src="{% static 'media/featured-services-bg.jpg' %}" class="bg-image"
+             alt="Results-driven Marketing" loading="eager" style="">
+        
+            </picture>
+            <div class=container-fluid>
                 <h2 class="font-weight-semibold" data-aos="fade-down" data-aos-duration="1000">Results-driven
                     Development</h2>
                 <ul class="featured-services__list list-unstyled d-xl-flex flex-wrap">
