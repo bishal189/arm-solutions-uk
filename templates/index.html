@@ -21,13 +21,11 @@
 
 {% include 'includes/alert.html' %}
     <main style="margin-top:-110px" id=main class=site-content>
-     
-        
-        <section class="banner banner-home">
-            
-            
+
+        <section style="height:100vh;" class="banner banner-home">
             <img  class="d-block lazyload"
-                    src="{% static 'images/banner.jpg' %}" style="width:100%; object-fit: fill;">
+                    src="{% static 'images/banner.jpg' %}" style="width:100%; height:100%;object-fit: fill;">
+
   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); color: white; display: flex; align-items: center; justify-content: center; text-align: center;">
 
                 <div class=banner__content>
@@ -142,44 +140,14 @@
                             </div>
                         </div>
                     </div>
-                    {% comment %} <div class=banner__logos data-aos=fade-down data-aos-duration=1000>
-                        <figure class="img-wrap d-inline-block m-0">
 
-                            <span width=206 height=79 src="" class="attachment-full size-full"
-                                alt="Amazon ads verified partner" loading=lazy>
-                        </figure>
-                    </div> {% endcomment %}
                 </div>
             </div>
         </section>
         <section class="featured-services text-center bg-cover text-white">
 
             <picture>
-                <source data-srcset="{% static 'media/featured-services-bg.jpg' %}"
-                media="(min-width: 1537px) and (max-width: 1920px)">
-        <source data-srcset="{% static 'media/featured-services-bg-1536x708.jpg' %}"
-                media="(min-width: 1025px) and (max-width: 1536px)">
-        <source data-srcset="{% static 'media/featured-services-bg-1024x472.jpg' %}"
-                media="(min-width: 1008px) and (max-width: 1024px)">
-        <source data-srcset="{% static 'media/featured-services-bg-1007x464.jpg' %}"
-                media="(min-width: 769px) and (max-width: 1007px)">
-        <source data-srcset="{% static 'media/featured-services-bg-768x354.jpg' %}"
-                media="(min-width: 756px) and (max-width: 768px)">
-        <source data-srcset="{% static 'media/featured-services-bg-755x348.jpg' %}"
-                media="(min-width: 688px) and (max-width: 755px)">
-        <source data-srcset="{% static 'media/featured-services-bg-687x317.jpg' %}"
-                media="(min-width: 571px) and (max-width: 687px)">
-        <source data-srcset="{% static 'media/featured-services-bg-570x263.jpg' %}"
-                media="(min-width: 547px) and (max-width: 570px)">
-        <source data-srcset="{% static 'media/featured-services-bg-546x252.jpg' %}"
-                media="(min-width: 409px) and (max-width: 546px)">
-        <source data-srcset="{% static 'media/featured-services-bg-408x188.jpg' %}"
-                media="(min-width: 301px) and (max-width: 408px)">
-        <source data-srcset="{% static 'media/featured-services-bg-300x138.jpg' %}"
-                media="(min-width: 76px) and (max-width: 300px)">
-        <source data-srcset="{% static 'media/featured-services-bg-75x35.jpg' %}" media="(max-width: 75px)">
-        <img width="1920" height="885" data-src="{% static 'media/featured-services-bg.jpg' %}" class="bg-image"
-             alt="Results-driven Marketing" loading="eager" style="">
+        <img width="1920" height="885" src="{% static 'images/index_results.avif' %}" style="position:absolute;height:100%;opacity:0.3" alt="Results-driven Marketing">
         
             </picture>
             <div class=container-fluid>
@@ -230,7 +198,7 @@
         <section class="our-story container-fluid lazyload">
             <template>
                 <div class=row>
-                    <div style="margin-top:3rem;" class=" col-xl-6 column" data-aos=fade-up-right data-aos-duration=10>
+                    <div style="margin-top:3rem;" class=" col-xl-6 column" data-aos=fade-up-right data-aos-duration=1>
                         <img style="margin-top:3rem;" src="{% static 'images/united.jpg' %}"
                                 style="width:100%; object-fit: fill;" />
 
@@ -253,7 +221,7 @@
             <template>
                 <div class=row>
                     <div class=col-xl-4>
-                        <div class=text-wrap data-aos=zoom-in-right data-aos-duration=1000>
+                        <div class=text-wrap data-aos=zoom-in-right data-aos-duration=10>
                             <h2 class="font-weight-semibold">The team you need to succeed</h2>
                             <p class="d-none d-md-block">Fueled by passion and a commitment to our clients, our team of experts drives performance for small businesses and medium size companies alike..</p>
                             <a href="{% url 'services' %}" class="btn btn-primary d-none d-md-block">Discover
