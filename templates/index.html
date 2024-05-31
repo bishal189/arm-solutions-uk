@@ -20,8 +20,15 @@
 
     <main style="margin-top:-140px" id=main class=site-content>
 
+    <style>
+@media (max-width: 576px) {
+.banner-home-index{
+margin-top:100px;
+}
+}
+    </style>
 
-        <section style="height:100vh;padding:0;" class="banner banner-ome">
+        <section style="height:100vh;padding:0;" class="banner banner-home-index">
             <img  class="d-block lazyload"
                     src="{% static 'images/banner.jpg' %}" style="width:100%; height:100%;object-fit: fill;">
 
