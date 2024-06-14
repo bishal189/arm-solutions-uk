@@ -25,10 +25,11 @@ def custom_404_view(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('index.urls')),
-    re_path(r'^.*$', custom_404_view),
+    
 
   #  path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
     path('sitemap.xml', TemplateView.as_view(template_name="sitemap.xml")),
+    re_path(r'^.*$', custom_404_view),
 ]
 if settings.DEBUG:
   urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
