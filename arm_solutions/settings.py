@@ -22,8 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-un55ln@6$oav4-o%n*inyg=f&e02#nr#xkc922+3p=0kzh_3(m'
 import os
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG',True)
+DEBUG =True
 print(DEBUG)
 ALLOWED_HOSTS = ['localhost','arm-solutions.co.uk','*']
 CSRF_TRUSTED_ORIGINS = ['http://localhost', 'https://arm-solutions.co.uk' ]
@@ -119,11 +118,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-#STATICFILES_DIRS = [
-#    BASE_DIR / "static",
 
-#]
-STATIC_ROOT='static/'
+# This is used to collect static files (run `collectstatic`)
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# This should NOT include STATIC_ROOT
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',  
+]
+
 MEDIA_ROOT='media'
 MEDIA_URL='/media/'
 
